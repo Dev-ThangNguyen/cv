@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="shortcut icon" href="https://ionicframework.com/docs/icons/logo-react-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./stogare/themify-icons/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
     <title>ProFile</title>
 </head>
 <body>
     <main>
-        <header>
-            <h2 class="heading">ConTact Me</h2>
-            <h2 class="heading">My Products</h2>
-        </header>
+        <div class="avatar-mb"></div>
         <div class="row wrap grid wide">
-            <div class="avatar col l-4 m-12 c-12"></div>
             <div class="information col l-8 m-12 c-12">
                 <span class="inf4">Hi, i am</span>
                 <h2 class="name">THANG NGUYEN</h2>
@@ -50,7 +56,7 @@
                         <div class="contact-name">thang1997iuh@gmail.com</div>
                     </a>
                 </div>
-                <div class="contact">
+                <div class="contact contact-social">
                     <a href="https://www.facebook.com/nguyenducthang.win">
                         <img class="icon-social" src="https://seeklogo.com/images/F/facebook-logo-264A8EFBA1-seeklogo.com.png" alt="">
                     </a>
@@ -60,8 +66,10 @@
                     <a href="https://github.com/Dev-ThangNguyen">
                         <img class="icon-social" src="https://cdn-icons-png.flaticon.com/512/37/37819.png" alt="">
                     </a>
+                    <img src="https://www.myproject.ng/assets/images/logo.png" alt="" class="icon-social social-mb">
                 </div>
             </div>
+            <div class="avatar col l-4 m-0 c-0"></div>
         </div>
     </main>
     <script src="./main.js"></script>

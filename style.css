@@ -5,44 +5,43 @@
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
 }
 
 main {
-    background: rgb(63,251,217);
     background: radial-gradient(circle, rgba(63,251,217,1) 0%, rgba(125,70,252,1) 94%);
-    width: 100%;
-    position: relative;
-    color: #333;
     min-height: 100vh;
-}
-
-header {
     display: flex;
-    justify-content: space-around;
-    padding: 16px 30px 0;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #fff;
-}
-
-.heading {
-    margin-right: 80px;
-    cursor: pointer;
+    justify-content: center;
+    position: relative;
 }
 
 .wrap {
-    background-color: white;
-    width: 100%;
-    border-radius: 8px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
+}
+
+.avatar {
+    background-image: url('./stogare/avarta.jpg');
+    background-size: cover;
+    background-position-y: 67%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.information {
+    background-color: rgba(183, 212, 231, 0.521);
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    line-height: 26px;
 }
 
 .link {
@@ -50,23 +49,7 @@ header {
 
 }
 
-.avatar {
-    background-image: url('./stogare/avarta.jpg');
-    background-size: cover;
-    background-position-y: 67%;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
 
-
-.information {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: start;
-    line-height: 26px;
-    padding: 20px 0 20px 20px;
-}
 
 .grid.wide {
     max-width: 1000px;
@@ -88,31 +71,59 @@ header {
 
 }
 
+.contact.contact-social {
+    flex-wrap: wrap;
+}
+
 .contact-name {
     padding-left: 10px;
 }
 
 .icon-social {
-    width: 40px;
+    height: 40px;
     margin-right: 40px;
 }
 
-/* @media (max-width: 1350px) {
+@media (max-width: 1024px) {
+    .avatar {
+        /* border-radius: 50%; */
+    }
+
     .wrap {
+        background-color: unset;
+    }
+
+    
+}
+
+@media (max-width: 740px) {
+    .avatar-mb {
+        background-image: url('./stogare/avarta.jpg');
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        display: block;
+    }
+
+    .information {
+        background-color: unset;
+    }
+
+    main {
         flex-direction: column;
         align-items: center;
-        background-color: unset;
-        margin-top: 150px;
+        padding: 30px;
     }
 
-    header {
-        display: none;
+    .wrap {
+        position: unset;
+        transform: unset
     }
 
-    img.avatar {
-        width: 200px;
-        border-radius: 50%;
-        margin-bottom: 30px;
+    .social-mb {
+        margin-top: 20px;
     }
-} */
+}
 
