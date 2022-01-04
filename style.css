@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+main {
+    background: rgb(63,251,217);
+    background: radial-gradient(circle, rgba(63,251,217,1) 0%, rgba(125,70,252,1) 94%);
+    width: 100%;
+    position: relative;
+    color: #333;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 30px 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.heading {
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.wrap {
+    background-color: white;
+    width: 100%;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.link {
+    text-decoration: none;
+
+}
+
+.avatar {
+    background-image: url('./stogare/avarta.jpg');
+    background-size: cover;
+    background-position-y: 67%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+.information {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+    line-height: 26px;
+    padding: 20px 0 20px 20px;
+}
+
+.grid.wide {
+    max-width: 1000px;
+}
+
+.name {
+    font-size: 2rem;
+    line-height: 40px;
+}
+
+.sub-name {
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.contact {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.contact-name {
+    padding-left: 10px;
+}
+
+.icon-social {
+    width: 40px;
+    margin-right: 40px;
+}
+
+/* @media (max-width: 1350px) {
+    .wrap {
+        flex-direction: column;
+        align-items: center;
+        background-color: unset;
+        margin-top: 150px;
+    }
+
+    header {
+        display: none;
+    }
+
+    img.avatar {
+        width: 200px;
+        border-radius: 50%;
+        margin-bottom: 30px;
+    }
+} */
+
